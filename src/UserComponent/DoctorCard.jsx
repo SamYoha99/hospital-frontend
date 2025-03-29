@@ -6,7 +6,7 @@ const DoctorCard = (doctor) => {
       <div class="card border-color rounded-card card-hover product-card custom-bg h-100">
         <img
           src={
-            "https://hospitalapi.wolffx.online/api/doctor/" +
+            "https://hospitalapi.glohamdigital23.online/api/doctor/" +
             doctor.item.doctorImage
           }
           class="card-img-top rounded mx-auto d-block m-2"

@@ -18,7 +18,7 @@ const ViewAllDoctor = () => {
 
   const retrieveAllDoctor = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/doctor/all"
+      "https://hospitalapi.glohamdigital23.online/api/doctor/all"
     );
     console.log(response.data);
     return response.data;
@@ -26,7 +26,7 @@ const ViewAllDoctor = () => {
 
   const deleteDoctor = (doctorId) => {
     fetch(
-      "https://hospitalapi.wolffx.online/api/user/delete/id?userId=" + doctorId,
+      "https://hospitalapi.glohamdigital23.online/api/user/delete/id?userId=" + doctorId,
       {
         method: "GET",
         headers: {
@@ -83,7 +83,7 @@ const ViewAllDoctor = () => {
                       <td>
                         <img
                           src={
-                            "https://hospitalapi.wolffx.online/api/user/" +
+                            "https://hospitalapi.glohamdigital23.online/api/user/" +
                             doctor.doctorImage
                           }
                           class="img-fluid"

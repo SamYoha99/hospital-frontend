@@ -40,21 +40,21 @@ const UserRegister = () => {
 
   const retrieveAllGenders = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/user/gender"
+      "https://hospitalapi.glohamdigital23.online/api/user/gender"
     );
     return response.data;
   };
 
   const retrieveAllBloodGroups = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/patient/bloodgroup/all"
+      "https://hospitalapi.glohamdigital23.online/api/patient/bloodgroup/all"
     );
     return response.data;
   };
 
   const retrieveAllSpecialist = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/doctor/specialist/all"
+      "https://hospitalapi.glohamdigital23.online/api/doctor/specialist/all"
     );
     return response.data;
   };
@@ -88,7 +88,7 @@ const UserRegister = () => {
 
   const saveUser = (event) => {
     event.preventDefault();
-    fetch("https://hospitalapi.wolffx.online/api/user/register", {
+    fetch("https://hospitalapi.glohamdigital23.online/api/user/register", {
       method: "POST",
       headers: {
         Accept: "application/json",

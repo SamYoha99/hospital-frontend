@@ -16,7 +16,7 @@ const TreatAppointment = () => {
 
   const retrieveAppointment = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/appointment/id?appointmentId=" +
+      "https://hospitalapi.glohamdigital23.online/api/appointment/id?appointmentId=" +
         appointmentId
     );
     return response.data;
@@ -42,7 +42,7 @@ const TreatAppointment = () => {
 
     axios
       .post(
-        "https://hospitalapi.wolffx.online/api/appointment/doctor/update",
+        "https://hospitalapi.glohamdigital23.online/api/appointment/doctor/update",
         formData
       )
       .then((result) => {

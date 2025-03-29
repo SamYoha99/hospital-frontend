@@ -35,14 +35,14 @@ const DoctorRegister = () => {
 
   const retrieveAllGenders = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/user/gender"
+      "https://hospitalapi.glohamdigital23.online/api/user/gender"
     );
     return response.data;
   };
 
   const retrieveAllSpecialist = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/doctor/specialist/all"
+      "https://hospitalapi.glohamdigital23.online/api/doctor/specialist/all"
     );
     return response.data;
   };
@@ -86,7 +86,7 @@ const DoctorRegister = () => {
     formData.append("experience", user.experience);
 
     axios
-      .post("https://hospitalapi.wolffx.online/api/doctor/register", formData)
+      .post("https://hospitalapi.glohamdigital23.online/api/doctor/register", formData)
       .then((result) => {
         result.json().then((res) => {
           console.log(res);

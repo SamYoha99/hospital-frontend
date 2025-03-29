@@ -18,7 +18,7 @@ const ViewAllPatient = () => {
 
   const retrieveAllPatient = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/patient/all"
+      "https://hospitalapi.glohamdigital23.online/api/patient/all"
     );
     console.log(response.data);
     return response.data;
@@ -26,7 +26,7 @@ const ViewAllPatient = () => {
 
   const deletePatient = (patientId) => {
     fetch(
-      "https://hospitalapi.wolffx.online/api/user/delete/id?userId=" +
+      "https://hospitalapi.glohamdigital23.online/api/user/delete/id?userId=" +
         patientId,
       {
         method: "GET",

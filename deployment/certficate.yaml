@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certficate
+metadata:
+  name: cert-certificate
+spec: 
+  secretName: bank-tls-secret
+  issuerRef: 
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: hospital.glohamdigital23.online
+  dnsNames: 
+    - hospital.glohamdigital23.online
+    - hospitalapi.glohamdigital23.online

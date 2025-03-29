@@ -16,7 +16,7 @@ const AssignAppointment = () => {
 
   const retrieveAppointment = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/appointment/id?appointmentId=" +
+      "https://hospitalapi.glohamdigital23.online/api/appointment/id?appointmentId=" +
         appointmentId
     );
     return response.data;

@@ -21,7 +21,7 @@ const ViewDoctorAppointment = () => {
 
   const retrieveAllAppointments = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/appointment/doctor/id?doctorId=" +
+      "https://hospitalapi.glohamdigital23.online/api/appointment/doctor/id?doctorId=" +
         doctor.id
     );
     console.log(response.data);

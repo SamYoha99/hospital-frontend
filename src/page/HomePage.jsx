@@ -9,7 +9,7 @@ const HomePage = () => {
 
   const retrieveAllDoctor = async () => {
     const response = await axios.get(
-      "https://hospitalapi.wolffx.online/api/doctor/all"
+      "https://hospitalapi.glohamdigital23.online/api/doctor/all"
     );
     console.log(response.data);
     return response.data;
