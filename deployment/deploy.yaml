@@ -13,7 +13,7 @@ spec:
         app: frontend-hospital
     spec:
       containers:
-        - name: frontend-hospitaling-container
+        - name: frontend-hospital-container
           image: adminsam99/hospital-app-frontend:latest # Replace this with your Docker image name
           ports:
             - containerPort: 3000 # Replace with your app's port if necessary
