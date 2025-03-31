@@ -70,4 +70,4 @@ jobs:
       - name: Deploy Hospital Backend to Kubernetes
         run: |
           kubectl apply -f deployment
-          kubectl get pod
+          kubectl get all
